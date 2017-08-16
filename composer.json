@@ -36,6 +36,7 @@
     "drupal/media_entity_document": "~1",
     "drupal/media_entity_image": "~1",
     "drupal/migrate_plus": "4.x-dev",
+    "drupal/migrate_source_csv": "^2.0",
     "drupal/migrate_tools": "4.x-dev",
     "drupal/ng_lightbox": "~1",
     "drupal/paragraphs": "1.x-dev",
