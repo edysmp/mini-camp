@@ -10,9 +10,9 @@ else
 fi
 
 # Provide default settings for running locally.
-if [ ! -f ./web/sites/default/settings.local.php ]; then
-  cp ./scripts/seed/settings.local.php ./web/sites/default/
-fi
+#if [ ! -f ./web/sites/default/settings.local.php ]; then
+#  cp ./scripts/seed/settings.local.php ./web/sites/default/
+#fi
 
 # Allow writing to settings.php
 chmod 777 ./web/sites/default

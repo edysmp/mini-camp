@@ -25,7 +25,7 @@
     "drupal/components": "~1",
     "drupal/config_installer": "~1",
     "drupal/console": "~1",
-    "drupal/core": "8.3.x-dev",
+    "drupal/core": "^8.3",
     "drupal/easy_breadcrumb": "1.x-dev",
     "drupal/entity_browser": "1.x-dev",
     "drupal/file_browser": "1.x-dev",
@@ -35,8 +35,8 @@
     "drupal/media_entity_audio": "1.x-dev",
     "drupal/media_entity_document": "~1",
     "drupal/media_entity_image": "~1",
-    "drupal/migrate_plus": "3.x-dev",
-    "drupal/migrate_tools": "~3",
+    "drupal/migrate_plus": "4.x-dev",
+    "drupal/migrate_tools": "4.x-dev",
     "drupal/ng_lightbox": "~1",
     "drupal/paragraphs": "1.x-dev",
     "drupal/pathauto": "~1",
@@ -46,8 +46,7 @@
     "drupal/twig_tweak": "~1",
     "drupal/video_embed_field": "~1",
     "drush/config-extra": "~1",
-    "drush/drush": "~8",
-    "geerlingguy/drupal-vm": "dev-master"
+    "drush/drush": "~8"
   },
   "require-dev": {
     "behat/behat": "~3.0",
@@ -60,7 +59,8 @@
     "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
     "mikey179/vfsStream": "~1.2",
     "phpunit/phpunit": "~5",
-    "symfony/css-selector": "2.8.*"
+    "symfony/css-selector": "2.8.*",
+    "geerlingguy/drupal-vm": "dev-master"
   },
   "replace": {
     "drupal/drupal": "*",
