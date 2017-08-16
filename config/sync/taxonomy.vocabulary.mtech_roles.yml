@@ -1,0 +1,9 @@
+uuid: 8fdf8ee2-5990-4420-98a6-a18e42ffb0f0
+langcode: en
+status: true
+dependencies: {  }
+name: 'MTech Roles'
+vid: mtech_roles
+description: ''
+hierarchy: 0
+weight: 0

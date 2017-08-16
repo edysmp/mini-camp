@@ -1,0 +1,20 @@
+uuid: df72c335-6283-4df8-834a-36d52f9e0fdc
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - user
+id: user.field_experience_date
+field_name: field_experience_date
+entity_type: user
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

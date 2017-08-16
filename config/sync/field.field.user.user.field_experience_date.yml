@@ -1,0 +1,21 @@
+uuid: cc242dcc-cb1b-4a32-937a-89247d631c51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_experience_date
+  module:
+    - datetime
+    - user
+id: user.user.field_experience_date
+field_name: field_experience_date
+entity_type: user
+bundle: user
+label: 'Experience Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

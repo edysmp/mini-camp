@@ -1,0 +1,11 @@
+uuid: 5fd0102b-2e84-46cc-86dc-e394e79bc491
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:cd62721a-468c-4b98-bc8c-d342ff2776c0'
+id: book
+label: Book
+icon_uuid: cd62721a-468c-4b98-bc8c-d342ff2776c0
+description: ''
+behavior_plugins: {  }

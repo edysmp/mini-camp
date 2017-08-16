@@ -3,11 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_address
+    - field.field.user.user.field_experience_date
+    - field.field.user.user.field_favorite_books
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_mtech_roles
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - address
+    - datetime
     - image
-    - path
+    - paragraphs
     - user
 _core:
   default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
@@ -17,32 +25,75 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
-    region: content
-  contact:
-    weight: 5
-    region: content
-  google_analytics:
-    weight: 3
-    region: content
-  language:
     weight: 0
     region: content
-  path:
-    type: path
-    weight: 30
     settings: {  }
     third_party_settings: {  }
+  field_address:
+    weight: 7
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_experience_date:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_favorite_books:
+    type: entity_reference_paragraphs
+    weight: 8
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mtech_roles:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   timezone:
-    weight: 6
+    weight: 5
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
+    weight: 3
     region: content
-hidden: {  }
+hidden:
+  contact: true
+  google_analytics: true
+  language: true
+  path: true

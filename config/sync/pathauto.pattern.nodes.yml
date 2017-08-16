@@ -1,0 +1,14 @@
+uuid: bcab171a-56f8-4ad7-b528-5f100cb23154
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: nodes
+label: Nodes
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }
